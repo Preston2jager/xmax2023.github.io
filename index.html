@@ -9,13 +9,11 @@
 </head>
 <body>
     <div class="snow-area"></div>
-    <a href="/">
-        <img src="./images/ARC.png" alt="Title pic" class="center-image">
-    </a>
+    <img src="./images/ARC.png" alt="Title pic" class="center-image">
     <div class="container">
         <div class="envelope-wrapper">
             <div class="envelope">
-                <div id="text-on-envelope" class="text-on-envelope" style="text-align: center;font-family: xmaxFont;font-size: 18px; font-weight: light;">Click the emblem below  </div>
+                
                 <div class="letter">
                     <div class="text">
                         <div style="text-align: center;font-family: xmaxFont;font-size: 18px; font-weight: bold;">
@@ -26,8 +24,8 @@
                             for a wonderful Christmas and a Happy New Year.
                         </p>
                         <p style="text-align: center;font-family: xmaxFont2;font-size: 8px; font-weight: lighter;">
-                            Australian Research Council (ARC) Training Centre for <br>Whole Life Design of Carbon Neutral Infrastructure <br>
-                            <br>Centre Director:
+                            Australian Research Council (ARC) <br>Industrial Transformation Training Centres for <br>Whole Life Design of Carbon Neutral Infrastructure <br>
+                            Centre Director:
                         </p>
                        
                         <p style="text-align: center;font-family: xmaxFont3;font-size: 16px; font-weight: lighter;">
@@ -41,9 +39,9 @@
     </div>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-        });
+        setInterval(() => {
+        envelope.classList.toggle('flap');
+    }, 6000);
     </script>
     <script src="js/snowy.js"></script>
     <script>

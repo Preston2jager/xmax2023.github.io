@@ -154,10 +154,10 @@ body::before {
 }
 .center-image {
   position: absolute;
-  top: 12%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px; /* or your desired width */
+  width: 400px; /* or your desired width */
   height: auto; /* maintain aspect ratio */
 }
 .text-on-envelope {
