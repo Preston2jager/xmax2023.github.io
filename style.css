@@ -48,7 +48,7 @@ body::before {
   height: 100vh;
   display: grid;
   place-items: center;
-  margin-top: 120px;
+  margin-top: 135px;
 }
 .container > .envelope-wrapper {
   background: var(--bg-envelope-color);
@@ -102,7 +102,7 @@ body::before {
 }
 .heart {
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 50%;
   width: 45px;
   height: 45px;
@@ -154,7 +154,7 @@ body::before {
 }
 .center-image {
   position: absolute;
-  top: 10%;
+  top: 13%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px; /* or your desired width */
