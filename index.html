@@ -39,9 +39,15 @@
     </div>
     <script>
         const envelope = document.querySelector('.envelope-wrapper');
-        setInterval(() => {
-        envelope.classList.toggle('flap');
-    }, 6000);
+        function toggleFlap(interval) {
+        setTimeout(() => {
+            envelope.classList.toggle('flap');
+            // 如果当前间隔是6秒，下次设为15秒，反之亦然
+            toggleFlap(interval === 6000 ? 15000 : 6000);
+        }, interval);
+    }
+
+    toggleFlap(6000); // 初始间隔设为6秒
     </script>
     <script src="js/snowy.js"></script>
     <script>
