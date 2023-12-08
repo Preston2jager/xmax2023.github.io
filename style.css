@@ -8,6 +8,18 @@
   --txt-color: #444;
   --heart-color: rgb(252, 8, 231);
 }
+@font-face {
+  font-family:xmaxFont;
+  src: url(./fonts/SEGOEPR.TTF);
+}
+@font-face {
+  font-family:xmaxFont2;
+  src: url(./fonts/CAMBRIAI.TTF);
+}
+@font-face {
+  font-family:xmaxFont3;
+  src: url(./fonts/RAGE.TTF);
+}
 body{
   margin: 0;
   padding: 0;
@@ -163,3 +175,4 @@ body::before {
   height: 100%;
   z-index: -1; /* Set appropriately to ensure it covers or sits behind other content as needed */
 }
+
