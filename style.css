@@ -5,7 +5,7 @@
   --envelope-tab: #ecdeb8;
   --envelope-cover: #e6cfa7;
   --shadow-color: rgba(0, 0, 0, 0.2);
-  --txt-color: #444;
+  --txt-color: #fff;
   --heart-color: rgb(252, 8, 231);
 }
 @font-face {
@@ -87,7 +87,11 @@ body::before {
   bottom: 0;
   width: 54%;
   height: 80%;
-  background: var(--primary);
+  background-image: linear-gradient(to bottom, #fd4d4d, #891313);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   transition: all 1s ease-in-out;
   box-shadow: 0 0 5px var(--shadow-color);
@@ -154,10 +158,18 @@ body::before {
 }
 .center-image {
   position: absolute;
-  top: 13%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px; /* or your desired width */
+  width: 360px; /* or your desired width */
+  height: auto; /* maintain aspect ratio */
+}
+.letter-image {
+  position: absolute;
+  margin-top: 130px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* or your desired width */
   height: auto; /* maintain aspect ratio */
 }
 .text-on-envelope {
